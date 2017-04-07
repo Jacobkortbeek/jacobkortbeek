@@ -1,0 +1,633 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+#home-container {
+  overflow: hidden; }
+
+.beardGuy {
+  width: 20%;
+  margin-top: 2.5%; }
+
+.titles h1 {
+  font-size: 2.5em;
+  color: #eac500;
+  text-shadow: 2px 2px 3px #0b0b0b; }
+
+.skills {
+  display: -webkit-inline-box; }
+  .skills h2 {
+    text-shadow: 2px 2px 3px #0b0b0b;
+    margin-top: 2.5%;
+    opacity: 0;
+    transform: rotate3d(2, 0, 0, 90deg);
+    transition: all 1.3s ease-in-out; }
+  .skills .parallax {
+    opacity: 1;
+    transform: rotate3d(0, 0, 0, 0); }
+
+#about-container {
+  margin-top: 5%;
+  background-color: #fffcc4;
+  color: black;
+  overflow: hidden;
+  padding-bottom: 11%; }
+  #about-container h1 {
+    font-size: 2.3em;
+    margin-bottom: -7%;
+    margin-top: 10%;
+    opacity: 0;
+    transform: translatey(-50px);
+    transition: all 1.3s ease-in-out; }
+  #about-container p {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    font-size: 1.8em;
+    margin-top: 13%;
+    opacity: 0;
+    transform: translatey(-50px);
+    transition: all 1.3s ease-in-out; }
+  #about-container .parallax {
+    opacity: 1;
+    transform: translatex(0px); }
+
+#knowledge-container {
+  background-color: steelblue;
+  color: black;
+  overflow: hidden; }
+  #knowledge-container h1 {
+    font-size: 2.3em;
+    margin-bottom: -10%;
+    margin-top: 5%;
+    opacity: 0;
+    transform: translatey(-50px);
+    transition: all 1.3s ease-in-out; }
+  #knowledge-container p {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    font-size: 1.8em;
+    margin-top: 13%;
+    opacity: 0;
+    transform: translatey(-50px);
+    transition: all 1.3s ease-in-out; }
+  #knowledge-container .css-img {
+    width: 16%; }
+  #knowledge-container .js-img {
+    width: 18.5%; }
+  #knowledge-container img {
+    width: 22%;
+    margin-right: 5%;
+    opacity: 0;
+    transform: translatex(-50px);
+    transition: all 1.3s ease-in-out; }
+  #knowledge-container .parallax {
+    opacity: 1;
+    transform: translatex(0px); }
+  #knowledge-container .diy-slideshow {
+    height: 58vh;
+    margin-top: 5%; }
+
+#contact-container {
+  background-color: #AAB6A2;
+  color: black;
+  overflow: hidden;
+  padding-bottom: 11%; }
+  #contact-container h1 {
+    font-size: 2.3em;
+    margin-top: 6%;
+    opacity: 0;
+    transform: translatey(-50px);
+    transition: all 1.3s ease-in-out; }
+  #contact-container input {
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 4em;
+    margin-bottom: 1.5em;
+    border-radius: 0.5em;
+    border-style: solid;
+    border: none;
+    outline: none;
+    opacity: 0;
+    transform: rotate3d(1, 0, 0, 60deg);
+    transition: all 1.3s ease-in-out; }
+  #contact-container textarea {
+    font-family: 'Varela Round', sans-serif;
+    text-align: justify;
+    font-weight: bold;
+    border-radius: 0.5em;
+    border-style: solid;
+    border: none;
+    outline: none;
+    margin: 0px;
+    height: 15em;
+    width: 57em;
+    margin-bottom: 1.5em;
+    opacity: 0;
+    transform: rotate3d(1, 0, 0, 60deg);
+    transition: all 1.8s ease-in-out; }
+  #contact-container .parallax {
+    opacity: 1;
+    transform: rotate3d(0, 0, 0, 0); }
+  #contact-container button {
+    color: aliceblue;
+    font-size: 1.3em;
+    border-radius: 0.5em;
+    background-color: steelblue;
+    border-style: solid;
+    border: none;
+    outline: none;
+    width: 37.8em;
+    height: 2em; }
+  #contact-container button:active {
+    background-color: #6ca2d7; }
+  #contact-container button:hover {
+    cursor: pointer; }
+
+#footer-container {
+  background-color: black;
+  height: 100%;
+  overflow: hidden; }
+  #footer-container .social-container {
+    margin-top: 3%;
+    margin-left: 3%;
+    float: left;
+    width: 20%; }
+    #footer-container .social-container .skype-img {
+      width: 32%; }
+    #footer-container .social-container img {
+      margin-right: 5%;
+      width: 15%;
+      opacity: 0;
+      transform: rotate3d(1, 0, 0, 60deg);
+      transition: all 1.3s ease-in-out; }
+    #footer-container .social-container .parallax {
+      opacity: 1;
+      transform: rotate3d(0, 0, 0, 0); }
+    #footer-container .social-container p {
+      margin-top: 2%;
+      margin-left: 4%; }
+  #footer-container p {
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 8%; }
+  #footer-container .back-to-top {
+    float: right;
+    margin-top: 8%;
+    margin-right: 2%; }
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+  #home-container {
+    height: 97vh; }
+  .beardGuy {
+    width: 50%;
+    margin-top: 12%; }
+  .titles h1 {
+    font-size: 5em; }
+  .skills h2 {
+    font-size: 2.5em; }
+  #about-container {
+    height: 94vh; }
+    #about-container h1 {
+      margin-top: 15%;
+      font-size: 6em; }
+    #about-container p {
+      font-size: 3em;
+      width: 80%; }
+  #knowledge-container {
+    height: 104vh; }
+    #knowledge-container h1 {
+      font-size: 6em;
+      margin-top: 20%; }
+    #knowledge-container p {
+      font-size: 3em;
+      width: 80%;
+      margin-top: 15%; }
+    #knowledge-container .css-img {
+      width: 20%; }
+    #knowledge-container .js-img {
+      width: 27.5%; }
+    #knowledge-container img {
+      width: 28%; }
+    #knowledge-container .diy-slideshow {
+      height: 22vh;
+      margin-top: 15%; }
+  #contact-container {
+    height: 94vh; }
+    #contact-container h1 {
+      font-size: 6em;
+      margin-top: 18%; }
+    #contact-container input {
+      width: 73.5%;
+      height: 6em;
+      margin-top: 5%; }
+    #contact-container textarea {
+      margin-top: 5%; }
+    #contact-container button {
+      height: 4em;
+      margin-top: 5%; }
+  #footer-container {
+    height: 22vh; }
+    #footer-container p {
+      margin-left: -32%;
+      font-size: 2em;
+      margin-top: 21%; }
+    #footer-container .social-container {
+      width: 35%; }
+      #footer-container .social-container .skype-img {
+        width: 55%; }
+      #footer-container .social-container img {
+        width: 25%; }
+      #footer-container .social-container p {
+        font-size: 2em;
+        margin-left: -2%; } }
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) {
+  #contact-container input {
+    width: 75%; } }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (orientation: portrait) {
+  #nav-icon2 {
+    top: 10%;
+    right: 14%; }
+  #home-container {
+    height: 97vh; }
+  .beardGuy {
+    width: 50%;
+    margin-top: 12%; }
+  .titles h1 {
+    font-size: 5em; }
+  .skills h2 {
+    font-size: 1.8em; }
+  #about-container {
+    height: 94vh; }
+    #about-container h1 {
+      margin-top: 15%;
+      font-size: 4em; }
+    #about-container p {
+      font-size: 2.5em;
+      width: 80%; }
+  #knowledge-container {
+    height: 104vh; }
+    #knowledge-container h1 {
+      font-size: 4em;
+      margin-top: 20%; }
+    #knowledge-container p {
+      font-size: 2.5em;
+      width: 80%;
+      margin-top: 15%; }
+    #knowledge-container .css-img {
+      width: 18.5%; }
+    #knowledge-container .js-img {
+      width: 25.5%; }
+    #knowledge-container img {
+      width: 26%; }
+    #knowledge-container .diy-slideshow {
+      height: 22vh;
+      margin-top: 15%; }
+  #contact-container {
+    height: 94vh; }
+    #contact-container h1 {
+      font-size: 4em;
+      margin-top: 15%; }
+    #contact-container input {
+      width: 73.5%;
+      height: 6em;
+      margin-top: 2.5%; }
+    #contact-container textarea {
+      width: 75%;
+      margin-top: 2.5%; }
+    #contact-container button {
+      height: 4em;
+      margin-top: 2%;
+      width: 75%; }
+  #footer-container {
+    height: 22vh; }
+    #footer-container p {
+      margin-left: -32%;
+      font-size: 1.5em;
+      margin-top: 21%; }
+    #footer-container .social-container {
+      width: 35%; }
+      #footer-container .social-container .skype-img {
+        width: 55%; }
+      #footer-container .social-container img {
+        width: 20%; }
+      #footer-container .social-container p {
+        font-size: 1.5em;
+        margin-left: -2%; } }
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+  .nav-container ul {
+    padding-left: 0%;
+    font-size: 2em; }
+  .nav-container #nav-icon2 {
+    top: 6%;
+    right: 11%; }
+  #home-container {
+    height: 97vh; }
+  .beardGuy {
+    width: 55%;
+    margin-top: 30%; }
+  .titles h1 {
+    font-size: 2.5em; }
+  .skills h2 {
+    font-size: 1em; }
+  #about-container {
+    height: 96vh; }
+    #about-container h1 {
+      margin-top: 15%;
+      font-size: 3em; }
+    #about-container p {
+      font-size: 1.5em;
+      width: 80%; }
+  #knowledge-container {
+    height: 76vh; }
+    #knowledge-container h1 {
+      font-size: 3em;
+      margin-top: 20%; }
+    #knowledge-container p {
+      font-size: 1.5em;
+      width: 80%;
+      margin-top: 15%; }
+    #knowledge-container .css-img {
+      width: 18.5%; }
+    #knowledge-container .js-img {
+      width: 25.5%; }
+    #knowledge-container img {
+      width: 26%; }
+    #knowledge-container .diy-slideshow {
+      height: 20vh;
+      margin-top: 15%; }
+  #contact-container {
+    height: 94vh; }
+    #contact-container h1 {
+      font-size: 3em;
+      margin-top: 15%; }
+    #contact-container input {
+      width: 73.5%;
+      height: 4em;
+      margin-top: 2.5%; }
+    #contact-container textarea {
+      width: 75%;
+      margin-top: 2.5%; }
+    #contact-container button {
+      height: 3em;
+      margin-top: 2%;
+      width: 75%; }
+  #footer-container {
+    height: 20vh; }
+    #footer-container p {
+      margin-left: -32%;
+      font-size: 1em;
+      margin-top: 21%; }
+    #footer-container .social-container {
+      width: 35%; }
+      #footer-container .social-container .skype-img {
+        width: 55%; }
+      #footer-container .social-container img {
+        width: 20%; }
+      #footer-container .social-container p {
+        font-size: 1em;
+        margin-left: -2%; } }
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+  .nav-container ul {
+    padding-left: 2%;
+    font-size: 2em; }
+  .nav-container #nav-icon2 {
+    top: 6%;
+    right: 11%; }
+  .nav-container-shown {
+    height: 50%; }
+  #contact-container textarea {
+    width: 50%; }
+  #contact-container button {
+    width: 50%;
+    height: 2em; }
+  #contact-container input {
+    height: 3em; } }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  .nav-container ul {
+    padding-left: 0%;
+    font-size: 2em; }
+  .nav-container #nav-icon2 {
+    top: 6%;
+    right: 11%; }
+  #home-container {
+    height: 97vh; }
+  .beardGuy {
+    width: 55%;
+    margin-top: 30%; }
+  .titles h1 {
+    font-size: 2.5em; }
+  .skills h2 {
+    font-size: .9em; }
+  #about-container {
+    height: 96vh; }
+    #about-container h1 {
+      margin-top: 15%;
+      font-size: 2.5em; }
+    #about-container p {
+      font-size: 1.3em;
+      width: 80%; }
+  #knowledge-container {
+    height: 76vh; }
+    #knowledge-container h1 {
+      font-size: 3em;
+      margin-top: 20%; }
+    #knowledge-container p {
+      font-size: 1.5em;
+      width: 80%;
+      margin-top: 15%; }
+    #knowledge-container .css-img {
+      width: 18.5%; }
+    #knowledge-container .js-img {
+      width: 25.5%; }
+    #knowledge-container img {
+      width: 26%; }
+    #knowledge-container .diy-slideshow {
+      height: 20vh;
+      margin-top: 15%; }
+  #contact-container {
+    height: 94vh; }
+    #contact-container h1 {
+      font-size: 3em;
+      margin-top: 15%; }
+    #contact-container input {
+      width: 73.5%;
+      height: 3em;
+      margin-top: 2.5%; }
+    #contact-container textarea {
+      width: 75%;
+      margin-top: 2.5%; }
+    #contact-container button {
+      height: 2em;
+      margin-top: 2%;
+      width: 75%; }
+  #footer-container {
+    height: 20vh; }
+    #footer-container p {
+      margin-left: -32%;
+      font-size: 1em;
+      margin-top: 21%; }
+    #footer-container .social-container {
+      width: 35%; }
+      #footer-container .social-container .skype-img {
+        width: 55%; }
+      #footer-container .social-container img {
+        width: 20%; }
+      #footer-container .social-container p {
+        font-size: 1em;
+        margin-left: -2%; } }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  .nav-container ul {
+    padding-left: 0%;
+    font-size: 2em; }
+  .nav-container #nav-icon2 {
+    top: 6%;
+    right: 11%; }
+  #home-container {
+    height: 97vh; }
+  .beardGuy {
+    width: 55%;
+    margin-top: 30%; }
+  .titles h1 {
+    font-size: 2.5em; }
+  .skills h2 {
+    font-size: .8em; }
+  #about-container {
+    height: 96vh; }
+    #about-container h1 {
+      margin-top: 15%;
+      font-size: 2.5em; }
+    #about-container p {
+      font-size: 1.1em;
+      width: 80%; }
+  #knowledge-container {
+    height: 95vh; }
+    #knowledge-container h1 {
+      font-size: 3em;
+      margin-top: 20%; }
+    #knowledge-container p {
+      font-size: 1.5em;
+      width: 80%;
+      margin-top: 15%; }
+    #knowledge-container .css-img {
+      width: 18.5%; }
+    #knowledge-container .js-img {
+      width: 25.5%; }
+    #knowledge-container img {
+      width: 26%; }
+    #knowledge-container .diy-slideshow {
+      height: 16vh;
+      margin-top: 15%; }
+  #contact-container {
+    height: 94vh; }
+    #contact-container h1 {
+      font-size: 3em;
+      margin-top: 15%; }
+    #contact-container input {
+      width: 73.5%;
+      height: 2em;
+      margin-top: 2.5%; }
+    #contact-container textarea {
+      width: 75%;
+      margin-top: 2.5%;
+      height: 10em; }
+    #contact-container button {
+      height: 2em;
+      margin-top: 2%;
+      width: 75%; }
+  #footer-container {
+    height: 20vh; }
+    #footer-container p {
+      margin-left: -32%;
+      font-size: .8em;
+      margin-top: 21%; }
+    #footer-container .social-container {
+      width: 35%; }
+      #footer-container .social-container .skype-img {
+        width: 55%; }
+      #footer-container .social-container img {
+        width: 20%; }
+      #footer-container .social-container p {
+        font-size: .8em;
+        margin-left: -2%; } }
+
+.diy-slideshow {
+  position: relative;
+  display: block;
+  overflow: hidden; }
+
+figure {
+  position: absolute;
+  opacity: 0;
+  transition: 1s opacity; }
+
+figcaption {
+  position: absolute;
+  font-family: sans-serif;
+  font-size: .8em;
+  bottom: .75em;
+  right: .35em;
+  padding: .25em;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 2px; }
+
+figcaption a {
+  color: #fff; }
+
+figure.show {
+  opacity: 1;
+  position: static;
+  transition: 1s opacity; }
+
+.next, .prev {
+  color: #fff;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  top: 50%;
+  z-index: 1;
+  font-size: 2em;
+  margin-top: -.75em;
+  opacity: .3;
+  user-select: none; }
+
+.next:hover, .prev:hover {
+  cursor: pointer;
+  opacity: 1; }
+
+.next {
+  right: 0;
+  padding: 10px 5px 15px 10px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px; }
+
+.prev {
+  left: 0;
+  padding: 10px 10px 15px 5px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px; }
+
+html {
+  height: 100%; }
+
+body {
+  background-image: url("/static/css/assets/gold-background.png");
+  background-color: #1f1f1f;
+  margin: auto;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  color: white; }
+
+a {
+  text-decoration: none; }
+
+main {
+  height: 100%; }

@@ -1,0 +1,762 @@
+#home-container{
+  overflow: hidden;
+}
+
+.beardGuy {
+  width: 20%;
+  margin-top: 2.5%;
+}
+.titles h1{
+  font-size: 2.5em;
+  color:#eac500;
+  text-shadow: 2px 2px 3px rgb(11,11,11);
+}
+.skills {
+  display: -webkit-inline-box;
+
+  h2 {
+  text-shadow: 2px 2px 3px rgb(11,11,11);
+  margin-top: 2.5%;
+  opacity: 0;
+  transform: rotate3d(2,0,0,90deg);
+  transition: all 1.3s ease-in-out;
+  }
+  .parallax {
+    opacity: 1;
+    transform: rotate3d(0,0,0,0);
+  }
+}
+
+
+#about-container {
+  margin-top: 5%;
+  background-color: #fffcc4;
+  color: black;
+  overflow: hidden;
+  padding-bottom: 11%;
+  h1 {
+    font-size: 2.3em;
+    margin-bottom: -7%;
+    margin-top: 10%;
+    opacity: 0;
+    transform: translatey(-50px);
+    transition: all 1.3s ease-in-out;
+  }
+  p {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    font-size: 1.8em;
+    margin-top: 13%;
+    opacity: 0;
+    transform: translatey(-50px);
+    transition: all 1.3s ease-in-out;
+  }
+  .parallax {
+    opacity: 1;
+    transform: translatex(0px);
+  }
+}
+
+#knowledge-container {
+  background-color: steelblue;
+  color: black;
+  overflow: hidden;
+  h1 {
+    font-size: 2.3em;
+    margin-bottom: -10%;
+    margin-top: 5%;
+    opacity: 0;
+    transform: translatey(-50px);
+    transition: all 1.3s ease-in-out;
+  }
+  p {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    font-size: 1.8em;
+    margin-top: 13%;
+    opacity: 0;
+    transform: translatey(-50px);
+    transition: all 1.3s ease-in-out;
+  }
+  .css-img {
+    width: 16%;
+  }
+  .js-img {
+    width: 18.5%;
+  }
+  img{
+    width:22%;
+    margin-right: 5%;
+    opacity: 0;
+    transform: translatex(-50px);
+    transition: all 1.3s ease-in-out;
+  }
+
+  .parallax {
+    opacity: 1;
+    transform: translatex(0px);
+  }
+  .diy-slideshow{
+    height: 58vh;
+    margin-top: 5%;
+  }
+}
+
+#contact-container {
+  background-color: #AAB6A2;
+  color: black;
+  overflow: hidden;
+  padding-bottom: 11%;
+  h1 {
+    font-size: 2.3em;
+    margin-top: 6%;
+    opacity: 0;
+    transform: translatey(-50px);
+    transition: all 1.3s ease-in-out;
+  }
+  input {
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 4em;
+    margin-bottom: 1.5em;
+    border-radius: 0.5em;
+    border-style: solid;
+    border: none;
+    outline: none;
+    opacity: 0;
+    transform: rotate3d(1,0,0,60deg);
+    transition: all 1.3s ease-in-out;
+  }
+  textarea {
+    font-family: 'Varela Round', sans-serif;
+    text-align: justify;
+    font-weight: bold;
+    border-radius: 0.5em;
+    border-style: solid;
+    border: none;
+    outline: none;
+    margin: 0px;
+    height: 15em;
+    width: 57em;
+    margin-bottom: 1.5em;
+    opacity: 0;
+    transform: rotate3d(1,0,0,60deg);
+    transition: all 1.8s ease-in-out;
+  }
+  .parallax {
+    opacity: 1;
+    transform: rotate3d(0,0,0,0);
+  }
+  //form buttons
+  button {
+    color: aliceblue;
+    font-size: 1.3em;
+    border-radius: 0.5em;
+    background-color: steelblue;
+    border-style: solid;
+    border: none;
+    outline: none;
+    width: 37.8em;
+    height: 2em;
+  }
+
+  button:active {
+    background-color: #6ca2d7;
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+}
+
+
+#footer-container {
+  background-color: black;
+  height: 100%;
+  overflow: hidden;
+  .social-container {
+    margin-top: 3%;
+    margin-left: 3%;
+    float: left;
+    width: 20%;
+    .skype-img {
+      width: 32%;
+    }
+    img {
+      margin-right: 5%;
+      width: 15%;
+      opacity: 0;
+      transform: rotate3d(1,0,0,60deg);
+      transition: all 1.3s ease-in-out;
+    }
+    .parallax {
+      opacity: 1;
+      transform: rotate3d(0,0,0,0);
+    }
+    p{
+      margin-top: 2%;
+      margin-left: 4%;
+    }
+  }
+  p {
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 8%
+  }
+  .back-to-top {
+    float: right;
+    margin-top: 8%;
+    margin-right: 2%;
+  }
+}
+
+
+//media qeuiries
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : portrait) {
+  #home-container{
+    height: 97vh;
+  }
+  .beardGuy {
+    width: 50%;
+    margin-top: 12%;
+  }
+  .titles h1 {
+    font-size: 5em;
+  }
+  .skills h2 {
+    font-size: 2.5em;
+  }
+  #about-container {
+    height: 94vh;
+    h1 {
+      margin-top: 15%;
+      font-size: 6em;
+    }
+    p {
+      font-size: 3em;
+      width: 80%;
+    }
+  }
+  #knowledge-container {
+    height: 104vh;
+    h1{
+      font-size: 6em;
+      margin-top: 20%;
+    }
+    p {
+      font-size: 3em;
+      width: 80%;
+      margin-top: 15%;
+    }
+    .css-img {
+      width: 20%;
+    }
+    .js-img{
+      width: 27.5%;
+    }
+    img {
+      width: 28%;
+    }
+    .diy-slideshow {
+      height: 22vh;
+      margin-top: 15%;
+    }
+  }
+  #contact-container {
+    height: 94vh;
+    h1{
+      font-size: 6em;
+      margin-top: 18%;
+    }
+    input {
+      width: 73.5%;
+      height: 6em;
+      margin-top: 5%;
+    }
+    textarea {
+      margin-top: 5%;
+    }
+    button {
+      height: 4em;
+      margin-top: 5%;
+    }
+  }
+  #footer-container{
+    height: 22vh;
+    p {
+      margin-left: -32%;
+      font-size: 2em;
+      margin-top: 21%;
+    }
+    .social-container{
+      width: 35%;
+      .skype-img {
+        width: 55%;
+      }
+      img {
+        width: 25%;
+      }
+      p{
+        font-size: 2em;
+        margin-left: -2%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1366px) and (orientation : landscape) {
+  #contact-container {
+    input {
+      width: 75%;
+    }
+  }
+}
+
+//ipad
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) and (orientation : portrait) {
+  #nav-icon2 {
+    top: 10%;
+    right: 14%;
+  }
+  #home-container{
+    height: 97vh;
+  }
+  .beardGuy {
+    width: 50%;
+    margin-top: 12%;
+  }
+  .titles h1 {
+    font-size: 5em;
+  }
+  .skills h2 {
+    font-size: 1.8em;
+  }
+  #about-container {
+    height: 94vh;
+    h1 {
+      margin-top: 15%;
+      font-size: 4em;
+    }
+    p {
+      font-size: 2.5em;
+      width: 80%;
+    }
+  }
+  #knowledge-container {
+    height: 104vh;
+    h1{
+      font-size: 4em;
+      margin-top: 20%;
+    }
+    p {
+      font-size: 2.5em;
+      width: 80%;
+      margin-top: 15%;
+    }
+    .css-img {
+      width: 18.5%;
+    }
+    .js-img{
+      width: 25.5%;
+    }
+    img {
+      width: 26%;
+    }
+    .diy-slideshow {
+      height: 22vh;
+      margin-top: 15%;
+    }
+  }
+  #contact-container {
+    height: 94vh;
+    h1{
+      font-size: 4em;
+      margin-top: 15%;
+    }
+    input {
+      width: 73.5%;
+      height: 6em;
+      margin-top: 2.5%;
+    }
+    textarea {
+      width:75%;
+      margin-top: 2.5%;
+    }
+    button {
+      height: 4em;
+      margin-top: 2%;
+      width:75%;
+    }
+  }
+  #footer-container{
+    height: 22vh;
+    p {
+      margin-left: -32%;
+      font-size: 1.5em;
+      margin-top: 21%;
+    }
+    .social-container{
+      width: 35%;
+      .skype-img {
+        width: 55%;
+      }
+      img {
+        width: 20%;
+      }
+      p{
+        font-size: 1.5em;
+        margin-left: -2%;
+      }
+    }
+  }
+}
+
+//iphone 6s plus
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : portrait) {
+  .nav-container {
+    ul {
+      padding-left: 0%;
+      font-size: 2em;
+    }
+    #nav-icon2 {
+      top: 6%;
+      right: 11%;
+    }
+  }
+  #home-container{
+    height: 97vh;
+  }
+  .beardGuy {
+    width: 55%;
+    margin-top: 30%;
+  }
+  .titles h1 {
+    font-size: 2.5em;
+  }
+  .skills h2 {
+    font-size: 1em;
+  }
+  #about-container {
+    height: 96vh;
+    h1 {
+      margin-top: 15%;
+      font-size: 3em;
+    }
+    p {
+      font-size: 1.5em;
+      width: 80%;
+    }
+  }
+  #knowledge-container {
+    height: 76vh;
+    h1{
+      font-size: 3em;
+      margin-top: 20%;
+    }
+    p {
+      font-size: 1.5em;
+      width: 80%;
+      margin-top: 15%;
+    }
+    .css-img {
+      width: 18.5%;
+    }
+    .js-img{
+      width: 25.5%;
+    }
+    img {
+      width: 26%;
+    }
+    .diy-slideshow {
+      height: 20vh;
+      margin-top: 15%;
+    }
+  }
+  #contact-container {
+    height: 94vh;
+    h1{
+      font-size: 3em;
+      margin-top: 15%;
+    }
+    input {
+      width: 73.5%;
+      height: 4em;
+      margin-top: 2.5%;
+    }
+    textarea {
+      width:75%;
+      margin-top: 2.5%;
+    }
+    button {
+      height: 3em;
+      margin-top: 2%;
+      width:75%;
+    }
+  }
+  #footer-container{
+    height: 20vh;
+    p {
+      margin-left: -32%;
+      font-size: 1em;
+      margin-top: 21%;
+    }
+    .social-container{
+      width: 35%;
+      .skype-img {
+        width: 55%;
+      }
+      img {
+        width: 20%;
+      }
+      p{
+        font-size: 1em;
+        margin-left: -2%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) and (orientation : landscape) {
+  .nav-container {
+    ul {
+      padding-left: 2%;
+      font-size: 2em;
+    }
+    #nav-icon2 {
+      top: 6%;
+      right: 11%;
+    }
+  }
+  .nav-container-shown {
+    height: 50%;
+  }
+  #contact-container {
+    textarea {
+      width: 50%;
+    }
+    button {
+      width: 50%;
+      height: 2em;
+    }
+    input {
+      height: 3em;
+    }
+  }
+}
+
+//iphone 6s
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
+  .nav-container {
+    ul {
+      padding-left: 0%;
+      font-size: 2em;
+    }
+    #nav-icon2 {
+      top: 6%;
+      right: 11%;
+    }
+  }
+  #home-container{
+    height: 97vh;
+  }
+  .beardGuy {
+    width: 55%;
+    margin-top: 30%;
+  }
+  .titles h1 {
+    font-size: 2.5em;
+  }
+  .skills h2 {
+    font-size: .9em;
+  }
+  #about-container {
+    height: 96vh;
+    h1 {
+      margin-top: 15%;
+      font-size: 2.5em;
+    }
+    p {
+      font-size: 1.3em;
+      width: 80%;
+    }
+  }
+  #knowledge-container {
+    height: 76vh;
+    h1{
+      font-size: 3em;
+      margin-top: 20%;
+    }
+    p {
+      font-size: 1.5em;
+      width: 80%;
+      margin-top: 15%;
+    }
+    .css-img {
+      width: 18.5%;
+    }
+    .js-img{
+      width: 25.5%;
+    }
+    img {
+      width: 26%;
+    }
+    .diy-slideshow {
+      height: 20vh;
+      margin-top: 15%;
+    }
+  }
+  #contact-container {
+    height: 94vh;
+    h1{
+      font-size: 3em;
+      margin-top: 15%;
+    }
+    input {
+      width: 73.5%;
+      height: 3em;
+      margin-top: 2.5%;
+    }
+    textarea {
+      width:75%;
+      margin-top: 2.5%;
+    }
+    button {
+      height: 2em;
+      margin-top: 2%;
+      width:75%;
+    }
+  }
+  #footer-container{
+    height: 20vh;
+    p {
+      margin-left: -32%;
+      font-size: 1em;
+      margin-top: 21%;
+    }
+    .social-container{
+      width: 35%;
+      .skype-img {
+        width: 55%;
+      }
+      img {
+        width: 20%;
+      }
+      p{
+        font-size: 1em;
+        margin-left: -2%;
+      }
+    }
+  }
+}
+
+
+//iphone 5
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : portrait) {
+  .nav-container {
+    ul {
+      padding-left: 0%;
+      font-size: 2em;
+    }
+    #nav-icon2 {
+      top: 6%;
+      right: 11%;
+    }
+  }
+  #home-container{
+    height: 97vh;
+  }
+  .beardGuy {
+    width: 55%;
+    margin-top: 30%;
+  }
+  .titles h1 {
+    font-size: 2.5em;
+  }
+  .skills h2 {
+    font-size: .8em;
+  }
+  #about-container {
+    height: 96vh;
+    h1 {
+      margin-top: 15%;
+      font-size: 2.5em;
+    }
+    p {
+      font-size: 1.1em;
+      width: 80%;
+    }
+  }
+  #knowledge-container {
+    height: 95vh;
+    h1{
+      font-size: 3em;
+      margin-top: 20%;
+    }
+    p {
+      font-size: 1.5em;
+      width: 80%;
+      margin-top: 15%;
+    }
+    .css-img {
+      width: 18.5%;
+    }
+    .js-img{
+      width: 25.5%;
+    }
+    img {
+      width: 26%;
+    }
+    .diy-slideshow {
+      height: 16vh;
+      margin-top: 15%;
+    }
+  }
+  #contact-container {
+    height: 94vh;
+    h1{
+      font-size: 3em;
+      margin-top: 15%;
+    }
+    input {
+      width: 73.5%;
+      height: 2em;
+      margin-top: 2.5%;
+    }
+    textarea {
+      width:75%;
+      margin-top: 2.5%;
+      height: 10em;
+    }
+    button {
+      height: 2em;
+      margin-top: 2%;
+      width:75%;
+    }
+  }
+  #footer-container{
+    height: 20vh;
+    p {
+      margin-left: -32%;
+      font-size: .8em;
+      margin-top: 21%;
+    }
+    .social-container{
+      width: 35%;
+      .skype-img {
+        width: 55%;
+      }
+      img {
+        width: 20%;
+      }
+      p{
+        font-size: .8em;
+        margin-left: -2%;
+      }
+    }
+  }
+}
